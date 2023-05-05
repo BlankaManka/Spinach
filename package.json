@@ -1,0 +1,26 @@
+{
+  "name": "cypressautblanka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "npx cypress open",
+    "cy:test:all": "npx cypress run",
+    "cy:test:spec": "npx cypress run --spec cypress/e2e/tutorialsNinja/homepage.cy.js",
+    "cy:test:tags:tests": "npx cypress run --spec cypress/e2e/tutorialsNinja/cypressTagsOnly.cy.js,cypress/e2e/tutorialsNinja/cyressTagsSkip.cy.js",
+    "cy:test:all:tutorialsNinja": "npx cypress run --spec \"cypress/e2e/tutorialsNinja/**/*\"",
+    "cy:test:todo:example": "npx cypress run --spec cypress/e2e/1-getting-started/todo.cy.js",
+    "cy:test:actions:locations": "npx cypress run --spec cypress/e2e/2-advanced-examples/actions.cy.js,cypress/e2e/2-advanced-examples/location.cy.js",
+    "cy:test:advanced:examples": "npx cypress run --spec \"cypress/e2e/2-advanced-examples/**/*\"",
+    "cy:test:all:firefox": "npx cypress run --browser firefox"
+  },
+  "author": "Blanka",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.8.1",
+    "cypress-xpath": "^2.0.1"
+  },
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3"
+  }
+}
